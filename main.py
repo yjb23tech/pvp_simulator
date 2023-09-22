@@ -1,25 +1,25 @@
 import player
 import funcs
 
+#Create Player 1
 player_1 = player.Player(player.set_player_name(), player.set_player_location(), player.set_player_age(), player.set_player_special_atk())
 print(player_1)
 
+#Create Player 2 
 player_2 = player.Player(player.set_player_name(), player.set_player_location(), player.set_player_age(), player.set_player_special_atk())
 print(player_2)
 
+#Tracks the number of rounds played 
 fight_counter = 0 
 
+#Determines who is on attack, who is on defence 
 bool_player_1_starts = True
 
 while (fight_counter < 5):
 
     if (bool_player_1_starts == True):
-        print(f"{player_1.player_name} is attacking!")
-        print(f"{player_2.player_name} is on the defensive!\n")
         funcs.pvp(player_1, player_2, fight_counter)
     else:
-        print(f"{player_2.player_name} is attacking")
-        print(f"{player_1.player_name} is on the defensive!\n")
         funcs.pvp(player_2, player_1, fight_counter)
 
     #print(f"Attack Power via func call: {player_1.player_launch_atk()}")
