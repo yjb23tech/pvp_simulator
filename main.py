@@ -17,20 +17,16 @@ bool_player_1_starts = True
 
 while (fight_counter < 5):
 
+    #The Player fed into funcs.pvp 1st is on attack; the Player fed in 2nd is on defence
     if (bool_player_1_starts == True):
+        #When the bool is True, Player 1 is fed in 1st and Player 2 in 2nd
         funcs.pvp(player_1, player_2, fight_counter)
     else:
+        #When the bool is False, Player 2 is passed in 1st and Player 1 in 2nd
         funcs.pvp(player_2, player_1, fight_counter)
 
-    #print(f"Attack Power via func call: {player_1.player_launch_atk()}")
-    #print(f"Defense Power via func call: {player_1.player_launch_def()}")
-    #print(f"HP Status: {player_1.player_hp}")
-
-    #print(f"Attack Power via GETish: {player_1.player_atk_pwr}")
-    #print(f"Defense Power via GETish: {player_1.player_def_pwr}")
-
-    print(" ")
-
+    #Once the pvp func is run, the order of the Players needs to swap to allow a new Player on atk and def
+    #Functions as a switch; swaps the order of Players so each Player has the chance to go first 
     if (bool_player_1_starts == True):
         print("Player 2 Starts!")
         bool_player_1_starts = False
