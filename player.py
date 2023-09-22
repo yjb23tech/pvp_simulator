@@ -30,6 +30,22 @@ class Player():
         self.player_def_pwr = random.randint(1,20)
         return self.player_def_pwr
     
+def set_player_name():
+    ui_player_name = input(f"\nWhat is your name Warrior?\n")
+    return ui_player_name
+
+def set_player_location():
+    ui_player_location = input(f"\nWhere are you from Warrior?\n")
+    return ui_player_location 
+
+def set_player_age():
+    ui_player_age = int(input(f"\nHow old are you Warrior?\n"))
+    return ui_player_age
+
+def set_player_special_atk():
+    ui_player_special_atk = input("\nWhat is the name of your special attack Warrior?\n")
+    return ui_player_special_atk
+
 
 
 

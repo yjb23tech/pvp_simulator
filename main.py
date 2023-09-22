@@ -1,6 +1,6 @@
 import player
 
-test_player = player.Player("Yondaime", "Konohoa", 29, "Flying God of Death")
+test_player = player.Player(player.set_player_name(), player.set_player_location(), player.set_player_age(), player.set_player_special_atk())
 print(test_player)
 
 fight_counter = 0 
