@@ -30,6 +30,10 @@ class Player():
         self.player_def_pwr = random.randint(1,20)
         return self.player_def_pwr
     
+    def player_launch_special_atk(self):
+        self.player_special_atk_pwr = random.randint(20, 50)
+        return self.player_special_atk_pwr
+    
 def set_player_name():
     ui_player_name = input(f"\nWhat is your name Warrior?\n")
     return ui_player_name
