@@ -12,7 +12,7 @@ class Player():
         self.player_special_atk_pwr = 1
     
     def __str__(self):
-        player_details = (f"Name: {self.player_name} Location: {self.player_location} Special Atk: {self.player_special_atk}")
+        player_details = (f"\nName: {self.player_name}\nLocation: {self.player_location}\nSpecial Atk: {self.player_special_atk}\n")
         return player_details
     
     
