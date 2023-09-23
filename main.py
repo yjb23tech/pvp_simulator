@@ -17,7 +17,7 @@ def play():
     #Determines who is on attack, who is on defence 
     bool_player_1_starts = True
 
-    while (fight_counter < 5):
+    while ((player_1.player_hp_status() > 0) and (player_2.player_hp_status() > 0)):
 
         #The Player fed into funcs.pvp 1st is on attack; the Player fed in 2nd is on defence
         if (bool_player_1_starts == True):
