@@ -13,6 +13,8 @@ class Player():
         self.player_atk_pwr = 1
         self.player_def_pwr = 1 
         self.player_special_atk_pwr = 1
+
+        
     
     def __str__(self):
         player_details = (f"\nName: {self.player_name}\nLocation: {self.player_location}\nSpecial Atk: {self.player_special_atk}\n")
